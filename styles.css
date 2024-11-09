@@ -3,4 +3,83 @@
   --color-container-bg: #252B42;
   --color-light: #B1B9D8;
   --color-paragraph: #8795C4;
+  --color-white: #FFFFFF;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-body-bg);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  color: var(--color-light);
+}
+
+p {
+  color: var(--color-paragraph);
+  width: 500px;
+  text-align: center;
+}
+
+.main-container {
+  background-color: var(--color-container-bg);
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  border-radius: 15px;
+}
+
+.container-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.otp-digits {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.otp-digits input[type='text'] {
+  background-color: var(--color-body-bg);
+  border: 2px solid var(--color-light);
+  padding-top: 70px;
+  padding-bottom: 70px;
+  text-align: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  color: var(--color-light);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 3rem;
+}
+
+.otp-digits input[type='text']::placeholder {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 3rem;
+  color: var(--color-light);
+}
+
+.verify-btn {
+  margin-top: 20px;
+}
+
+.verify-btn a {
+  text-decoration: none;
+  color: var(--color-white);
+  border: 2px solid var(--color-body-bg);
+  border-bottom: 4px solid #2E3650;
+  border-radius: 8px;
+  background-color: var(--color-body-bg);
+  padding: 10px 100px;
 }
