@@ -36,6 +36,8 @@ p {
   padding-left: 100px;
   padding-right: 100px;
   border-radius: 15px;
+  width: 100%;
+  max-width: 900px;
 }
 
 .container-title {
@@ -48,7 +50,6 @@ p {
 .otp-digits {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .otp-digits input[type='text'] {
@@ -60,10 +61,13 @@ p {
   margin-right: 10px;
   margin-bottom: 10px;
   border-radius: 10px;
-  width: 10%;
+  width: 100%;
+  max-width: 140px;
   color: var(--color-light);
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 3rem;
+  caret-color: transparent;
+  cursor: pointer;
 }
 
 .otp-digits input[type='text']::placeholder {
