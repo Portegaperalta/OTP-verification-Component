@@ -84,8 +84,18 @@ p {
   text-decoration: none;
   color: var(--color-white);
   border: 2px solid var(--color-body-bg);
-  border-bottom: 4px solid #2E3650;
   border-radius: 8px;
   background-color: var(--color-body-bg);
   padding: 10px 100px;
+  transition: 0.25s ease-in-out;
+}
+
+.verify-btn a:hover {
+  background-color: var(--color-disabled);
+  border-color: var(--color-disabled);
+}
+
+.verify-btn a:active {
+  background-color: var(--color-body-bg);
+  border-bottom: solid 4px var(--color-light);
 }
